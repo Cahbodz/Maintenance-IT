@@ -173,7 +173,7 @@
               <a data-toggle="tooltip" data-placement="top" title="Lock">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="<?php echo base_url("login/logout.php"); ?>">
+              <a data-toggle="tooltip" data-placement="top" title="Login" href="<?php echo base_url("login"); ?>">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
