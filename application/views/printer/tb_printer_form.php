@@ -1,16 +1,15 @@
 <!doctype html>
 <html>
-<head>
-  
-</head>
+
 <body>
 
     <div class="card card-primary">
         <div class="card-header" style="background-color: #648ECF;">
             <h3 class="card-title">
-             <p style="color: white"> <i class="fa fa-edit"></i> Tambah Data</p></h3>
-         </div>
-         <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+                <p style="color: white"> <i class="fa fa-edit"></i> Tambah Data</p>
+            </h3>
+        </div>
+        <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
             <div class="card-body">
 
                 <div class="form-group row">
@@ -48,12 +47,12 @@
                     </div>
                 </div>
             </div>
-            <input type="hidden" name="id_printer" value="<?php echo $id_printer; ?>" /> 
-            <button type="submit" class="btn btn-primary"><?php echo $button ?></button> 
+            <input type="hidden" name="id_printer" value="<?php echo $id_printer; ?>" />
+            <button type="submit" class="btn btn-primary"><?php echo $button ?></button>
             <a href="<?php echo site_url('printer') ?>" class="btn btn-default">Cancel</a>
         </form>
     </div>
 
-
 </body>
+
 </html>

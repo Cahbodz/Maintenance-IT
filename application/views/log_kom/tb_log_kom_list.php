@@ -18,15 +18,6 @@
                 <ul class="nav navbar-right panel_toolbox">
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="dropdown-item" href="#">Settings 1</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Settings 2</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li><a class="close-link"><i class="fa fa-close"></i></a>
                     </li>
                 </ul>
@@ -40,16 +31,16 @@
             <thead>
             <tr>
                 <th>No</th>
-                <th>Id Komputer</th>
+                <th>ID Komputer</th>
                 <th>Nama User</th>
                 <th>Kerusakan</th>
+                <th>Bagian</th>
                 <th>Tindakan</th>
                 <th>Ket</th>
-                <th>Bagian</th>
                 <th>Nama It</th>
                 <th>Tgl Mulai</th>
                 <th>Tgl Selesai</th>
-                <th>Action</th>
+                <th>_______Action_______</th>
             </tr>
             </thead>
             <tbody>
@@ -62,13 +53,13 @@
                     <td><?php echo $log_kom->id_komputer ?></td>
                     <td><?php echo $log_kom->nama_user ?></td>
                     <td><?php echo $log_kom->kerusakan ?></td>
+                    <td><?php echo $log_kom->bagian ?></td>
                     <td><?php echo $log_kom->tindakan ?></td>
                     <td><?php echo $log_kom->ket ?></td>
-                    <td><?php echo $log_kom->bagian ?></td>
                     <td><?php echo $log_kom->nama_it ?></td>
                     <td><?php echo $log_kom->tgl_mulai ?></td>
                     <td><?php echo $log_kom->tgl_selesai ?></td>
-                    <td style="text-align:center" width="200px">
+                    <td style="width:100%">
                 <!-- <?php 
                 echo anchor(site_url('log_kom/read/'.$log_kom->id_log),'Read'); 
                 echo ' | '; 

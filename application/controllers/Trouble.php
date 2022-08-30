@@ -25,7 +25,7 @@ class Trouble extends CI_Controller
             $config['first_url'] = base_url() . 'trouble/index.html';
         }
 
-        $config['per_page'] = 10;
+        $config['per_page'] = 1000;
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->M_trouble->total_rows($q);
         $trouble = $this->M_trouble->get_limit_data($config['per_page'], $start, $q);

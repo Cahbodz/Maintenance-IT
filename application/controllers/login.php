@@ -19,7 +19,8 @@ class Login extends CI_Controller {
 			$user =$this->input->post('username',true);
 			$pass =$this->input->post('password',true);
 			$cek = $this->M_login->prosesLogin($user,$pass);
-			$hasil = count($cek);
+			// $hasil = count($cek);
+			$hasil = count($cek); 
 			if($hasil > 0){
 				// $select = $this->db->get_where('user', array('username' => $user, 'password' =>$pass))->row();
 				// $data = array('logged_in' => true, 'loger' => $select ->username);

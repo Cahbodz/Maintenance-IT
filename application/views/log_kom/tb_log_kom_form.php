@@ -31,13 +31,7 @@
               </div>
             </div>
         
-            <!-- <div class="form-group row">
-                <label class="col-sm-2 col-form-label">id_komputer</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" id="id_komputer" name="id_komputer" required value="<?php echo $id_komputer; ?>" />
-                </div>
-            </div>
- -->
+    
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">nama_user</label>
                 <div class="col-sm-6">
@@ -62,12 +56,12 @@
              <div class="form-group row">
                 <label class="col-sm-2 col-form-label">tindakan</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" id="tindakan" name="tindakan" value="<?php echo $tindakan; ?>" />
+                <textarea class="form-control" id="tindakan" name="tindakan" rows="3"/><?php echo $tindakan; ?></textarea>    
                 </div>
             </div>
 
              <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Bagian</label>
+                <label class="col-sm-2 col-form-label">Bagian<?php echo form_error('kondisi') ?></label>
                 <div class="col-sm-4">
                     <select name="bagian" id="bagian" class="form-control">
                         <option>- Pilih -</option>
@@ -78,9 +72,13 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">ket</label>
-                <div class="col-sm-6">
-                    <textarea class="form-control" id="ket" name="ket" rows="3"/><?php echo $ket; ?></textarea>
+                <label class="col-sm-2 col-form-label"> Keterangan <?php echo form_error('ket') ?></label>
+                <div class="col-sm-4">
+                    <select name="ket" id="ket" class="form-control">
+                        <option>- Pilih -</option>
+                        <option value="selesai" <?= ($ket == 'selesai' ? 'selected' : ''); ?>>selesai</option>
+                        <option value="proses" <?= ($ket == 'proses' ? 'selected' : ''); ?>>proses</option>
+                    </select>
                 </div>
             </div>
 

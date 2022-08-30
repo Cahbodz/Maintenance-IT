@@ -64,14 +64,24 @@
                         <option value="standar" <?= ($level_inter == 'standar' ? 'selected' : ''); ?>>standar</option>
                     </select>
                 </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-2 col-form-label">jenis dekstop / netbook</label>
+                <div class="col-sm-4">
+                    <select name="jenis_deks_netbook" id="jenis_deks_netbook" class="form-control">
+                        <option>- Pilih -</option>
+                        <option value="dekstop" <?= ($jenis_deks_netbook == 'dekstop' ? 'selected' : ''); ?>>dekstop</option>
+                        <option value="netbook" <?= ($jenis_deks_netbook == 'netbook' ? 'selected' : ''); ?>>netbook</option>
+                    </select>
+                </div>
         </div>
 
-             <div class="form-group row">
+             <!-- <div class="form-group row">
                 <label class="col-sm-2 col-form-label">jenis dekstop / netbook</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" id="jenis_deks_netbook" name="jenis_deks_netbook" value="<?php echo $jenis_deks_netbook; ?>" />
                 </div>
-            </div>
+            </div> -->
 
              <div class="form-group row">
                 <label class="col-sm-2 col-form-label">merek dekstop / netbook</label>
